@@ -23,7 +23,7 @@ public abstract class BankAccount
 
     public virtual void Withdraw(decimal amount)
     {
-        Console.WriteLine($"Încercare de retragere a sumei de {amount} RON din contul lui {OwnerName}.");
+        Console.WriteLine($"Incercare de retragere a sumei de {amount} RON din contul lui {OwnerName}.");
         Console.WriteLine(WithdrawMessage());
     }
 

@@ -17,12 +17,12 @@ public class CurrentAccount : BankAccount
         }
         else
         {
-            Console.WriteLine($"Suma cerută depășește plafonul de descoperire de cont pentru {OwnerName}. Suma nu poate fi retrasă.");
+            Console.WriteLine($"Suma ceruta depaseste plafonul de descoperire de cont pentru {OwnerName}. Suma nu poate fi retrasa.");
         }
     }
 
     protected override string WithdrawMessage()
     {
-        return "Retragerea nu este permisă pentru conturile curente.";
+        return "Retragerea nu este permisa pentru conturile curente.";
     }
 }

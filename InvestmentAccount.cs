@@ -5,7 +5,7 @@ public class InvestmentAccount : BankAccount
     private readonly int withdrawalDay;
     private bool canWithdraw;
 
-    public InvestmentAccount(string ownerName, int withdrawalDay) : base("Cont de investiții", ownerName)
+    public InvestmentAccount(string ownerName, int withdrawalDay) : base("Cont de investitii", ownerName)
     {
         this.withdrawalDay = withdrawalDay;
         canWithdraw = false;
@@ -14,7 +14,7 @@ public class InvestmentAccount : BankAccount
     public override void Deposit(decimal amount)
     {
         base.Deposit(amount);
-        Console.WriteLine($"S-a depus suma de {amount} RON în contul de investiții al lui {OwnerName}. Soldul curent: {Balance} RON.");
+        Console.WriteLine($"S-a depus suma de {amount} RON în contul de investitii al lui {OwnerName}. Soldul curent: {Balance} RON.");
     }
 
     public override void Withdraw(decimal amount)
@@ -25,7 +25,7 @@ public class InvestmentAccount : BankAccount
         }
         else
         {
-            Console.WriteLine($"Retragerea nu este permisă pentru contul de investiții al lui {OwnerName} înainte de ziua de retragere ({withdrawalDay}).");
+            Console.WriteLine($"Retragerea nu este permisa pentru contul de investitii al lui {OwnerName} înainte de ziua de retragere ({withdrawalDay}).");
         }
     }
 
@@ -41,6 +41,6 @@ public class InvestmentAccount : BankAccount
 
     protected override string WithdrawMessage()
     {
-        return "Retragerea nu este permisă pentru conturile de investiții.";
+        return "Retragerea nu este permisa pentru conturile de investitii.";
     }
 }

@@ -18,6 +18,6 @@ public class SavingsAccount : BankAccount
 
     protected override string WithdrawMessage()
     {
-        return "Retragerea nu este permisă pentru conturile de economii.";
+        return "Retragerea nu este permisa pentru conturile de economii.";
     }
 }
